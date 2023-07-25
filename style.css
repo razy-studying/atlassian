@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #4c9e9e;
+    font-family: cursive;
+    font-size: 15px;
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  
+  /* NAVBAR STYLING STARTS */
+  #navbar {
+    justify-content:flex-start; 
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #1E90FF;
+    display: flex;
+  }
+  
+  .nav-links{
+    display: flex;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+  
+  #navbar .logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;   
+  }
+  
+  .sevices li:hover {
+    background-color: #1e8fffa7; 
+    border-radius: 5px;
+  }
+  
+  .sevices li {
+    padding: 5px 14px;
+  }
+  
+  .Products {
+    position: relative; 
+    color: #778899;
+  }
+  
+  .dropdown {
+    background-color: #fff;
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #1e8fffa7;
+  }
+  
+  .Products:hover .dropdown {
+    display: block;
+  }
+
+  .login {
+    background-color: #1E90FF;
+    color: #fff;
+    justify-self: end;
+  }
+
+  #hompage {    
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#Atlassian-solutions{
+    height: 150vh;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    font-weight: normal;
+    flex-direction: column;
+}
+
+.Atlassian-solutions-title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #778899;
+}
+
+.buttons {
+  justify-content: space-around;
+  align-self: center;
+}
+
+.work-button {
+  background-color: #1E90FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.IT-Agile-button{
+  background-color: rgb(196, 220, 244);
+  border: none;
+  color: #1E90FF;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.work-flow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.work-flow-text{
+  justify-self: start;
+  font-size: 16px;
+  text-align: start;
+}
+
+.work-flow-img{
+  display: flex;
+  justify-content:flex-end;
+  height: 90%;
+  object-fit: cover;
+}
+
+.services-button{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.services-button img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  background-color: #1E90FF;
+  border-radius: 10px;
+  border: #1E90FF;
+  justify-self: start;
+}
+
+.confluence{
+  display: flex;
+  flex-direction: row;
+}
+
+.services-text{
+  font-weight: normal;
+  margin-left: 10px;
+  justify-self: center;
+  font-size: 8px;
+}
+
+#customers{
+  height: 50vh;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  text-align: center;
+  font-weight: normal;
+  flex-direction: column;
+  background: linear-gradient(#fff, 75%, #1E90FF);
+}
+
+.customers-title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #778899;
+}
+
+.customers-watcher{
+  font-size: 10px;
+  color: #1E90FF;
+}
+
+.customers-buttons{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+.social-link img {
+  width: 90px;
+  height: 60px;
+  border-radius: 5%; /* For circular images if the logos are circular */
+}
+
+.social-link img:hover {
+  filter: brightness(85%); /* Reduce brightness on hover */
+}
+
+.customers-logo{
+  color: #778899;
+}
+
+#career{
+  height: 80vh;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  text-align: center;
+  position: relative;
+  background: url("career1.png") no-repeat left bottom ,url("career2.jpg") no-repeat right bottom;
+  background-size: 30%;
+  background-color: #fff;
+  font-weight: bolder;
+  flex-direction: column;
+}
+
+.career-title{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #1E90FF;
+}
+
+.career-button{
+  background-color: #1E90FF;
+  border: none;
+  color: white;
+  padding: 8px 20px;  
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
